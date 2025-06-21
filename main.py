@@ -9,7 +9,7 @@ import sys
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
-# Set voice rate (optional)
+# Set voice rate 
 engine.setProperty('rate', 150)
 
 # Set IST time zone
@@ -51,7 +51,7 @@ def respond(command):
     else:
         speak("Sorry, I don't recognize that command.")
 
-# 🔁 Main loop
+# Main loop
 if __name__ == "__main__":
     speak("Voice assistant started. Say something!")
     while True:
